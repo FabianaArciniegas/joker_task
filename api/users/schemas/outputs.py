@@ -1,7 +1,7 @@
 from pydantic import BaseModel, EmailStr
 
 
-class UserBasic(BaseModel):
+class UserResponse(BaseModel):
     username: str
     full_name: str
     email: EmailStr

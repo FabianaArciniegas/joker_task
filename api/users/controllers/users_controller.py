@@ -3,7 +3,7 @@ from typing import List
 from fastapi import APIRouter, Request, Response
 
 from api.users.schemas.inputs import UserCreation, UserUpdate
-from api.users.schemas.outputs import UserBasic
+from api.users.schemas.outputs import UserResponse
 from api.users.services.users_service import UsersService
 
 users_router: APIRouter = APIRouter(prefix='/users')
@@ -18,7 +18,7 @@ async def create_user(
         request: Request,
         response: Response,
         user_data: UserCreation
-) -> UserBasic:
+) -> UserResponse:
     print("Received data to create user in controller")
     user_service = UsersService(request.app.database)
     user = await user_service.create_user(user_data)
@@ -35,7 +35,7 @@ async def get_user_by_id(
         request: Request,
         response: Response,
         user_id: str
-) -> UserBasic:
+) -> UserResponse:
     print("Received data to get user in controller")
     user_service = UsersService(request.app.database)
     user = await user_service.get_user_by_id(user_id)
@@ -51,7 +51,7 @@ async def get_user_by_id(
 async def get_all_users(
         request: Request,
         response: Response
-) -> List[UserBasic]:
+) -> List[UserResponse]:
     print("Get users in controller")
     user_service = UsersService(request.app.database)
     users = await user_service.get_all_users()
@@ -69,7 +69,7 @@ async def update_user(
         response: Response,
         user_id: str,
         user_data: UserUpdate
-) -> UserBasic:
+) -> UserResponse:
     print("Received data to update user in controller")
     user_service = UsersService(request.app.database)
     user = await user_service.update_user(user_id, user_data)
