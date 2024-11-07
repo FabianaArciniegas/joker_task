@@ -11,4 +11,4 @@ class BaseModelDB(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="_id")
     created_at: datetime = Field(default_factory=datetime.utcnow)
     updated_at: datetime = Field(default_factory=datetime.utcnow)
-    deleted: bool = False
+    is_deleted: bool = False

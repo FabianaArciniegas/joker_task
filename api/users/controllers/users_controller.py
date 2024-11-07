@@ -2,7 +2,7 @@ from typing import List
 
 from fastapi import APIRouter, Request, Response
 
-from api.users.schemas.inputs import UserCreation, UserUpdate
+from api.users.schemas.inputs import UserCreation, UserUpdate, UserChangePassword
 from api.users.schemas.outputs import UserResponse
 from api.users.services.users_service import UsersService
 
@@ -23,6 +23,24 @@ async def create_user(
     user_service = UsersService(request.app.database)
     user = await user_service.create_user(user_data)
     print(f"User created successfully: {user}")
+    return user
+
+
+@users_router.get(
+    path="/verify-user",
+    tags=['users'],
+    description='Verify user',
+)
+async def verify_user(
+        request: Request,
+        response: Response,
+        _id: str,
+        token: str
+) -> UserResponse:
+    print("Received data to verify user in controller")
+    user_service = UsersService(request.app.database)
+    user = await user_service.verify_user(_id, token)
+    print(f"User verified successfully: {user}")
     return user
 
 
@@ -92,3 +110,21 @@ async def delete_user(
     await user_service.delete_user(user_id)
     print(f"User deleted successfully: {user_id}")
     return
+
+
+@users_router.patch(
+    path="/change-password/id={user_id}",
+    tags=['users'],
+    description='Change password',
+)
+async def change_password(
+        request: Request,
+        response: Response,
+        user_id: str,
+        user_password: UserChangePassword,
+) -> UserResponse:
+    print("Received data to change the user password in controller")
+    user_service = UsersService(request.app.database)
+    user = await user_service.change_password(user_id, user_password)
+    print(f"Password updated successfully: {user}")
+    return user

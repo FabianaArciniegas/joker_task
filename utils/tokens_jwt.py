@@ -1,7 +1,8 @@
+import secrets
 from datetime import datetime, timedelta
 from enum import Enum
 
-from jose import jwt
+from jose import jwt, ExpiredSignatureError, JWTError
 
 from core.config import settings
 
@@ -28,3 +29,22 @@ async def create_token(data: dict, token_type: TokenType):
         to_encode.update({"exp": expire})
         encoded_jwt = jwt.encode(to_encode, SECRET_KEY_REFRESH, algorithm=ALGORITHM)
     return encoded_jwt
+
+
+async def decode_token(token: str, token_type: TokenType):
+    try:
+        if token_type == TokenType.access_token:
+            payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        if token_type == TokenType.refresh_token:
+            payload = jwt.decode(token, SECRET_KEY_REFRESH, algorithms=[ALGORITHM])
+        if not payload.get("id"):
+            raise ValueError("Invalid token")
+        return payload
+    except ExpiredSignatureError:
+        raise ValueError("Token has expired")
+    except JWTError:
+        raise ValueError("Invalid token or signature verification failed")
+
+
+def create_random_token():
+    return secrets.token_urlsafe()

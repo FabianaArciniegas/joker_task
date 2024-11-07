@@ -38,7 +38,7 @@ class BaseRepository(Generic[DBModel]):
 
     async def get_by_id(self, _id: str, raise_exception: bool = True) -> DBModel | None:
         print("Getting instance from database")
-        instance_found = await self.collection.find_one({"_id": _id, "deleted": False})
+        instance_found = await self.collection.find_one({"_id": _id, "is_deleted": False})
         if not instance_found and raise_exception:
             raise ValueError("Instance not found")
         print("Instance found successfully in database")
@@ -46,7 +46,7 @@ class BaseRepository(Generic[DBModel]):
 
     async def get_all(self, raise_exception: bool = True) -> List[DBModel] | None:
         print("Getting all instances from database")
-        instances_found = self.collection.find({"deleted": False})
+        instances_found = self.collection.find({"is_deleted": False})
         list_instances = await instances_found.to_list()
         if not list_instances and raise_exception:
             raise ValueError("there are no instances")
