@@ -10,7 +10,7 @@ auth_router: APIRouter = APIRouter(prefix="/auth")
 
 @auth_router.post(
     path="/login",
-    tags=["login"],
+    tags=["auth"],
     description="Login a user",
 )
 async def login(
@@ -27,7 +27,7 @@ async def login(
 
 @auth_router.post(
     path="/refresh-token",
-    tags=["refresh_token"],
+    tags=["auth"],
     description="Refresh token",
 )
 async def refresh_token(
@@ -43,8 +43,25 @@ async def refresh_token(
 
 
 @auth_router.post(
+    path="/logout",
+    tags=["auth"],
+    description="Logout a user",
+)
+async def logout(
+        request: Request,
+        response: Response,
+        user_id: str  # ojo este dato viene de la ruta protegida
+):
+    print("Received data to logout")
+    auth_service = AuthService(request.app.database)
+    await auth_service.logout(user_id)
+    print(f"User successfully logged out: {user_id}")
+    return
+
+
+@auth_router.post(
     path="/forgot-password",
-    tags=["forgot_password"],
+    tags=["auth"],
     description="Forgot password",
 )
 async def forgot_password(
@@ -61,7 +78,7 @@ async def forgot_password(
 
 @auth_router.post(
     path="/reset-password",
-    tags=["reset_password"],
+    tags=["auth"],
     description="Reset password",
 )
 async def reset_password(

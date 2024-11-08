@@ -6,8 +6,8 @@ from api.users.schemas.inputs import UserCreation, UserUpdate, UserChangePasswor
 from api.users.schemas.outputs import UserResponse
 from repositories.users import UsersRepository
 from services.email_sending_service import EmailSendingService
-from utils.security import hash_password, check_password, verified_user_confirmation
-from utils.tokens_jwt import decode_token, create_random_token
+from utils.security import hash_password, check_password
+from utils.tokens_jwt import create_random_token
 
 
 class UsersService:
@@ -26,7 +26,8 @@ class UsersService:
         user_add["user_verify_token"] = token_for_email
         created_user = await self.user_repository.create(user_add)
         print("Sending email to user")
-        await self.send_email.send_email_to_verify_user(created_user.id, created_user.email, token_for_email)
+        await self.send_email.send_email_to_verify_user(created_user.id, created_user.email, token_for_email,
+                                                        created_user.full_name)
         user = UserResponse(**created_user.model_dump())
         return user
 

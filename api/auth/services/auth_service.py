@@ -46,6 +46,13 @@ class AuthService:
         await self.user_repository.patch(user_found.id, user_found)
         return TokensResponse(access_token=access_token, refresh_token=refresh_token)
 
+    async def logout(self, user_id: str) -> None:
+        print("Get user")
+        user_found = await self.user_repository.get_by_id(user_id)
+        user_found.refresh_token = None
+        await self.user_repository.patch(user_id, user_found)
+        return
+
     async def forgot_password(self, email: EmailStr) -> None:
         print("Check if email exists")
         await self.user_repository.confirm_if_username_or_email_exists(email)
@@ -54,7 +61,7 @@ class AuthService:
         token_for_email = create_random_token()
         user_found.password_reset_token = token_for_email
         await self.user_repository.patch(user_found.id, user_found)
-        await self.send_email.send_email_to_reset_password(user_found.id, email, token_for_email)
+        await self.send_email.send_email_to_reset_password(user_found.id, email, token_for_email, user_found.full_name)
         print("Message sent successfully to user")
 
     async def reset_password(self, user_password: UserResetPassword) -> UserResponse:

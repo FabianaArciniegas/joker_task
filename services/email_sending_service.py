@@ -1,8 +1,9 @@
 import smtplib
 from email.mime.text import MIMEText
 
+# from urllib.request import Request
+from jinja2 import Environment, FileSystemLoader
 from pydantic import EmailStr
-from pyexpat.errors import messages
 
 from core.config import settings
 
@@ -13,21 +14,24 @@ class EmailSendingService:
         self.port = settings.SMTP_PORT
         self.username = settings.SMTP_USERNAME
         self.password = settings.SMTP_PASSWORD
+        self.env = Environment(loader=FileSystemLoader('templates'))
 
-    async def send_email_to_reset_password(self, user_id: str, email: EmailStr, token: str) -> MIMEText:
+    async def send_email_to_reset_password(self, user_id: str, email: EmailStr, token: str,
+                                           user_fullname: str) -> MIMEText:
         url = f'https://joker_task/reset-password/id={user_id}&token={token}'
-        text_link = "Reset Password"
-        text_message = f"Hacer click en el siguiente enlace: <a href='{url}'>{text_link}</a>"
-        message = MIMEText(text_message, "html")
+        template = self.env.get_template('email_to_reset_password.html')
+        html_content = template.render(name=user_fullname, url=url)
+        message = MIMEText(html_content, "html")
         message['Subject'] = "Reset Password"
         message['To'] = email
         await self._send_email(message)
 
-    async def send_email_to_verify_user(self, user_id: str, email: EmailStr, token: str) -> MIMEText:
+    async def send_email_to_verify_user(self, user_id: str, email: EmailStr, token: str,
+                                        user_fullname: str) -> MIMEText:
         url = f'https://joker_task/verify-user/id={user_id}&token={token}'
-        text_link = "User verification"
-        text_message = f"Hacer click en el siguiente enlace: <a href='{url}'>{text_link}</a>"
-        message = MIMEText(text_message, "html")
+        template = self.env.get_template('email_to_verify_user.html')
+        html_content = template.render(name=user_fullname, url=url)
+        message = MIMEText(html_content, "html")
         message['Subject'] = "User verification"
         message['To'] = email
         await self._send_email(message)
