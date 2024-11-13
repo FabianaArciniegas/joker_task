@@ -5,6 +5,8 @@ from enum import Enum
 from jose import jwt, ExpiredSignatureError, JWTError
 
 from core.config import settings
+from core.errors import InvalidTokenError
+from models.responde_model import LocationError
 
 SECRET_KEY = settings.SECRET_KEY
 SECRET_KEY_REFRESH = settings.SECRET_KEY_REFRESH
@@ -38,12 +40,13 @@ async def decode_token(token: str, token_type: TokenType):
         if token_type == TokenType.refresh_token:
             payload = jwt.decode(token, SECRET_KEY_REFRESH, algorithms=[ALGORITHM])
         if not payload.get("id"):
-            raise ValueError("Invalid token")
+            raise InvalidTokenError(message="Invalid token", location=LocationError.Headers)
         return payload
     except ExpiredSignatureError:
-        raise ValueError("Token has expired")
+        raise InvalidTokenError(message="Token has expired", location=LocationError.Headers)
     except JWTError:
-        raise ValueError("Invalid token or signature verification failed")
+        raise InvalidTokenError(message="Invalid token or signature verification failed",
+                                location=LocationError.Headers)
 
 
 def create_random_token():

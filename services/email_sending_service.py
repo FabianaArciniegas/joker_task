@@ -1,7 +1,6 @@
 import smtplib
 from email.mime.text import MIMEText
 
-# from urllib.request import Request
 from jinja2 import Environment, FileSystemLoader
 from pydantic import EmailStr
 

@@ -6,4 +6,3 @@ class UserResponse(BaseModel):
     full_name: str
     email: EmailStr
     profile_picture: str
-
