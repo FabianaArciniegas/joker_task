@@ -6,6 +6,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 from api.routes import routes
 from core.config import settings
+from utils import app_exception_handler
 
 
 @asynccontextmanager
@@ -20,7 +21,7 @@ async def lifespan(app: FastAPI):
     app.mongodb_client.close()
 
 
-app = FastAPI(lifespan=lifespan)
+app = FastAPI(lifespan=lifespan, exception_handlers=app_exception_handler)
 
 for route in routes:
     app.include_router(route, prefix=settings.API_STR)

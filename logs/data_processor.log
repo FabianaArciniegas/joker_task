@@ -88,3 +88,37 @@
 11/13/2024 02:59:52 PM - INFO: cc178b2b-729b-489e-96d0-c6a1a3fc9aa2 - Received data to refresh token
 11/13/2024 02:59:52 PM - INFO: cc178b2b-729b-489e-96d0-c6a1a3fc9aa2 - Verify token
 11/13/2024 02:59:52 PM - ERROR: cc178b2b-729b-489e-96d0-c6a1a3fc9aa2 - Invalid token or signature verification failed
+11/14/2024 04:16:42 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Received data to log
+11/14/2024 04:16:42 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Check if user or email exists
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Get user
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Compare passwords and user confirmation
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Create tokens
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Save refresh token
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Patching instance in database
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Getting instance from database
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Instance found successfully in database
+11/14/2024 04:16:43 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Updating instance in database
+11/14/2024 04:16:44 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - Instance updated successfully in database
+11/14/2024 04:16:44 PM - INFO: a60cdcbb-17bd-40f9-970c-92e901313a1e - User successfully logged in: maria22
+11/14/2024 04:24:36 PM - INFO: 13c84aa8-cf9d-424f-8cb1-7c93a6660e5d - Received data to get user
+11/14/2024 04:24:36 PM - ERROR: 13c84aa8-cf9d-424f-8cb1-7c93a6660e5d - BaseRepository.__init__() missing 1 required positional argument: 'api_response'
+11/14/2024 04:25:07 PM - INFO: e060d55b-1874-410f-9807-80a123a5f4d4 - Received data to get user
+11/14/2024 04:25:07 PM - ERROR: e060d55b-1874-410f-9807-80a123a5f4d4 - BaseRepository.__init__() missing 1 required positional argument: 'api_response'
+11/14/2024 04:28:09 PM - INFO: c78720c0-952a-4d1a-918d-0ffec713e75f - Received data to get user
+11/14/2024 04:28:09 PM - INFO: c78720c0-952a-4d1a-918d-0ffec713e75f - Verify authenticated user
+11/14/2024 04:28:09 PM - ERROR: c78720c0-952a-4d1a-918d-0ffec713e75f - 'TokenData' object has no attribute 'user_id'
+11/14/2024 04:28:12 PM - INFO: 3c23a014-9e19-4929-ad56-cd2934dcfd7f - Received data to get user
+11/14/2024 04:28:12 PM - INFO: 3c23a014-9e19-4929-ad56-cd2934dcfd7f - Verify authenticated user
+11/14/2024 04:28:12 PM - ERROR: 3c23a014-9e19-4929-ad56-cd2934dcfd7f - 'TokenData' object has no attribute 'user_id'
+11/14/2024 04:28:34 PM - INFO: 39c660c0-3fcf-4076-ab10-c682a63995af - Received data to get user
+11/14/2024 04:28:34 PM - INFO: 39c660c0-3fcf-4076-ab10-c682a63995af - Verify authenticated user
+11/14/2024 04:28:34 PM - INFO: 39c660c0-3fcf-4076-ab10-c682a63995af - Get user
+11/14/2024 04:28:34 PM - INFO: 39c660c0-3fcf-4076-ab10-c682a63995af - Getting instance from database
+11/14/2024 04:28:34 PM - INFO: 39c660c0-3fcf-4076-ab10-c682a63995af - Instance found successfully in database
+11/14/2024 04:28:34 PM - INFO: 39c660c0-3fcf-4076-ab10-c682a63995af - User found successfully: username='maria22' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'
+11/14/2024 04:28:42 PM - INFO: 16dab51d-c421-48a5-b6b2-9acb82cd50f3 - Received data to get user
+11/14/2024 04:28:42 PM - INFO: 16dab51d-c421-48a5-b6b2-9acb82cd50f3 - Verify authenticated user
+11/14/2024 04:28:42 PM - ERROR: 16dab51d-c421-48a5-b6b2-9acb82cd50f3 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/14/2024 04:29:31 PM - INFO: 5de16bc8-83d4-4458-a65f-9a9236fd15f0 - Received data to get user
+11/14/2024 04:29:31 PM - INFO: 5de16bc8-83d4-4458-a65f-9a9236fd15f0 - Verify authenticated user
+11/14/2024 04:29:31 PM - ERROR: 5de16bc8-83d4-4458-a65f-9a9236fd15f0 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers

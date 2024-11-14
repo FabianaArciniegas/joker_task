@@ -11,7 +11,7 @@ async def hash_password(password: str):
     return hashed.decode('utf-8')
 
 
-async def check_password(hashed_password: str, plain_password: str) -> None:
+async def compare_password(hashed_password: str, plain_password: str) -> None:
     if not bcrypt.checkpw(plain_password.encode('utf-8'), hashed_password.encode('utf-8')):
         raise InvalidParameterError(message="Invalid credentials", location=LocationError.Body)
 

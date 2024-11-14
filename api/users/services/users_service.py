@@ -1,28 +1,32 @@
-from typing import List
+from typing import List, Optional
 
 from motor.motor_asyncio import AsyncIOMotorDatabase
 
 from api.users.schemas.inputs import UserCreation, UserUpdate, UserChangePassword
 from api.users.schemas.outputs import UserResponse
+from core.auth import verify_active_user
 from core.errors import InvalidTokenError
 from models.responde_model import LocationError
+from models.users import TokenData
 from repositories.users import UsersRepository
 from schemas.api_response import ApiResponse
 from services.email_sending_service import EmailSendingService
-from utils.security import hash_password, check_password
+from utils.security import hash_password, compare_password
 from utils.tokens_jwt import create_random_token
 
 
 class UsersService:
-    def __init__(self, db: AsyncIOMotorDatabase, api_response: ApiResponse):
+    def __init__(self, db: AsyncIOMotorDatabase, api_response: ApiResponse, token_data: Optional[TokenData] = None):
         self.db = db
         self.api_response = api_response
-        self.user_repository = UsersRepository(self.db)
+        self.token_data = token_data
+        self.user_repository = UsersRepository(self.db, self.api_response)
         self.send_email = EmailSendingService()
 
     async def create_user(self, user_data: UserCreation) -> UserResponse:
         self.api_response.logger.info("Check if the user already exists")
         await self.user_repository.username_available(user_data.username)
+        await self.user_repository.email_available(user_data.email)
         self.api_response.logger.info("Received data to create user")
         user_add = user_data.model_dump()
         user_add["password"] = await hash_password(user_data.password)
@@ -49,6 +53,8 @@ class UsersService:
         return user
 
     async def get_user_by_id(self, user_id: str) -> UserResponse:
+        self.api_response.logger.info("Verify authenticated user")
+        await verify_active_user(user_id, self.token_data)
         self.api_response.logger.info("Get user")
         user_found = await self.user_repository.get_by_id(user_id)
         user = UserResponse(**user_found.model_dump())
@@ -63,6 +69,8 @@ class UsersService:
         return users
 
     async def update_user(self, user_id: str, user_data: UserUpdate) -> UserResponse:
+        self.api_response.logger.info("Verify authenticated user")
+        await verify_active_user(user_id, self.token_data)
         self.api_response.logger.info("Check if data is available")
         await self.user_repository.username_available(user_data.username)
         await self.user_repository.email_available(user_data.email)
@@ -72,14 +80,18 @@ class UsersService:
         return user
 
     async def delete_user(self, user_id: str) -> None:
+        self.api_response.logger.info("Verify authenticated user")
+        await verify_active_user(user_id, self.token_data)
         self.api_response.logger.info("Delete user")
         await self.user_repository.delete(user_id)
 
     async def change_password(self, user_id: str, user_password: UserChangePassword) -> UserResponse:
+        self.api_response.logger.info("Verify authenticated user")
+        await verify_active_user(user_id, self.token_data)
         self.api_response.logger.info("Get user")
         user_found = await self.user_repository.get_by_id(user_id)
         self.api_response.logger.info("Received data to update user")
-        await check_password(user_found.password, user_password.current_password)
+        await compare_password(user_found.password, user_password.current_password)
         user_found.password = await hash_password(user_password.new_password)
         updated_user = await self.user_repository.patch(user_id, user_found)
         user = UserResponse(**updated_user.model_dump())

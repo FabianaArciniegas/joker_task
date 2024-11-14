@@ -5,7 +5,9 @@ from fastapi import APIRouter, Request, Response, Depends
 from api.users.schemas.inputs import UserCreation, UserUpdate, UserChangePassword
 from api.users.schemas.outputs import UserResponse
 from api.users.services.users_service import UsersService
+from core.auth import get_current_user
 from models.responde_model import ResponseModel
+from models.users import TokenData
 from schemas.api_response import ApiResponse
 from utils.reponse_handler import response_handler
 
@@ -61,10 +63,11 @@ async def get_user_by_id(
         request: Request,
         response: Response,
         user_id: str,
+        token_data: Annotated[TokenData, Depends(get_current_user)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> ResponseModel[UserResponse]:
     api_response.logger.info("Received data to get user")
-    user_service = UsersService(request.app.database, api_response)
+    user_service = UsersService(request.app.database, api_response, token_data)
     user = await user_service.get_user_by_id(user_id)
     api_response.logger.info(f"User found successfully: {user}")
     return user
@@ -79,6 +82,7 @@ async def get_user_by_id(
 async def get_all_users(
         request: Request,
         response: Response,
+        token_data: Annotated[TokenData, Depends(get_current_user)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> ResponseModel[List[UserResponse]]:
     api_response.logger.info("Received data to get all users")
@@ -99,10 +103,11 @@ async def update_user(
         response: Response,
         user_id: str,
         user_data: UserUpdate,
+        token_data: Annotated[TokenData, Depends(get_current_user)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> ResponseModel[UserResponse]:
     api_response.logger.info("Received data to update user")
-    user_service = UsersService(request.app.database, api_response)
+    user_service = UsersService(request.app.database, api_response, token_data)
     user = await user_service.update_user(user_id, user_data)
     api_response.logger.info(f"User updated successfully: {user}")
     return user
@@ -118,10 +123,11 @@ async def delete_user(
         request: Request,
         response: Response,
         user_id: str,
+        token_data: Annotated[TokenData, Depends(get_current_user)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> ResponseModel:
     api_response.logger.info("Received data to delete user")
-    user_service = UsersService(request.app.database, api_response)
+    user_service = UsersService(request.app.database, api_response, token_data)
     await user_service.delete_user(user_id)
     api_response.logger.info(f"User deleted successfully: {user_id}")
     return
@@ -138,10 +144,11 @@ async def change_password(
         response: Response,
         user_id: str,
         user_password: UserChangePassword,
+        token_data: Annotated[TokenData, Depends(get_current_user)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> ResponseModel[UserResponse]:
     api_response.logger.info("Received data to change the user password")
-    user_service = UsersService(request.app.database, api_response)
+    user_service = UsersService(request.app.database, api_response, token_data)
     user = await user_service.change_password(user_id, user_password)
     api_response.logger.info(f"Password updated successfully: {user}")
     return user

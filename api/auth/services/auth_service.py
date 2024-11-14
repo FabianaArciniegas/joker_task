@@ -10,7 +10,7 @@ from models.users import TokenData
 from repositories.users import UsersRepository
 from schemas.api_response import ApiResponse
 from services.email_sending_service import EmailSendingService
-from utils.security import check_password, hash_password, verified_user_confirmation
+from utils.security import compare_password, hash_password, verified_user_confirmation
 from utils.tokens_jwt import create_token, TokenType, decode_token, create_random_token
 
 
@@ -27,7 +27,7 @@ class AuthService:
         self.api_response.logger.info("Get user")
         user_found = await self.user_repository.get_by_username_or_email(user_login.username_or_email)
         self.api_response.logger.info("Compare passwords and user confirmation")
-        await check_password(user_found.password, user_login.password)
+        await compare_password(user_found.password, user_login.password)
         await verified_user_confirmation(user_found.is_verified)
         self.api_response.logger.info("Create tokens")
         token_data = TokenData(**user_found.model_dump())

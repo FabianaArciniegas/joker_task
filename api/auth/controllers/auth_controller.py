@@ -6,7 +6,9 @@ from api.auth.schemas.inputs import UserLogin, Token, UserEmail, UserResetPasswo
 from api.auth.schemas.outputs import TokensResponse
 from api.auth.services.auth_service import AuthService
 from api.users.schemas.outputs import UserResponse
+from core.auth import get_current_user
 from models.responde_model import ResponseModel
+from models.users import TokenData
 from schemas.api_response import ApiResponse
 from utils.reponse_handler import response_handler
 
@@ -60,13 +62,13 @@ async def refresh_token(
 async def logout(
         request: Request,
         response: Response,
-        user_id: str,  # ojo este dato viene de la ruta protegida
+        token_data: Annotated[TokenData, Depends(get_current_user)],
         api_response: Annotated[ApiResponse, Depends(ApiResponse)]
 ) -> ResponseModel:
     api_response.logger.info("Received data to logout")
     auth_service = AuthService(request.app.database, api_response)
-    await auth_service.logout(user_id)
-    api_response.logger.info(f"User successfully logged out: {user_id}")
+    await auth_service.logout(token_data.id)
+    api_response.logger.info(f"User successfully logged out: {token_data.id}")
     return
 
 
