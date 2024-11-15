@@ -1,5 +1,5 @@
 from fastapi import Request
-from starlette.responses import JSONResponse
+from fastapi.responses import JSONResponse
 
 from core.errors import UnauthorizedError, InvalidTokenError, InvalidCredentialsError, InvalidParameterError
 from schemas.api_response import ApiResponse

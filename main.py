@@ -6,7 +6,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 
 from api.routes import routes
 from core.config import settings
-from utils import app_exception_handler
+from utils.app_exception_handler import app_exception_handler
 
 
 @asynccontextmanager

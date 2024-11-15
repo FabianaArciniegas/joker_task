@@ -87,3 +87,15 @@ class AuthService:
         updated_user = await self.user_repository.patch(user_found.id, user_found)
         user = UserResponse(**updated_user.model_dump())
         return user
+
+    async def authenticate_user_token(self, form_data) -> TokensResponse:
+        self.api_response.logger.info("Get user")
+        user_found = await self.user_repository.get_by_username_or_email(form_data.username)
+        self.api_response.logger.info("Compare passwords and user confirmation")
+        await compare_password(user_found.password, form_data.password)
+        await verified_user_confirmation(user_found.is_verified)
+        self.api_response.logger.info("Create tokens")
+        token_data = TokenData(**user_found.model_dump())
+        access_token = await create_token(data=token_data.model_dump(), token_type=TokenType.access_token)
+        refresh_token = await create_token(data=token_data.model_dump(), token_type=TokenType.refresh_token)
+        return TokensResponse(access_token=access_token, refresh_token=refresh_token)

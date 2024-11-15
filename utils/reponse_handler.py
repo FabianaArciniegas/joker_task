@@ -7,7 +7,7 @@ from core.errors import InvalidParameterError, UnauthorizedError, ForbiddenError
 from models.responde_model import LocationError
 
 
-def response_handler():
+def response_handler(raw_response: bool = False):
     def decorator(func):
         @functools.wraps(func)
         async def wrapper(request: Request, response: Response, *args, **kwargs):
@@ -52,7 +52,10 @@ def response_handler():
                 api_response.logger.error(error)
 
             response.status_code = api_response.status.code
-            return api_response.set_result
+            if raw_response:
+                return api_response.data
+            else:
+                return api_response.set_result
 
         return wrapper
 

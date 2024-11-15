@@ -122,3 +122,81 @@
 11/14/2024 04:29:31 PM - INFO: 5de16bc8-83d4-4458-a65f-9a9236fd15f0 - Received data to get user
 11/14/2024 04:29:31 PM - INFO: 5de16bc8-83d4-4458-a65f-9a9236fd15f0 - Verify authenticated user
 11/14/2024 04:29:31 PM - ERROR: 5de16bc8-83d4-4458-a65f-9a9236fd15f0 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 09:53:25 AM - ERROR: be7ad5d8-b881-4081-8b19-483be8c183ac - Error: InvalidTokenError : Invalid token - Token has expired, request.headers
+11/15/2024 09:54:06 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Received data to log
+11/15/2024 09:54:06 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Check if user or email exists
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Get user
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Compare passwords and user confirmation
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Create tokens
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Save refresh token
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Patching instance in database
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Getting instance from database
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Instance found successfully in database
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Updating instance in database
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - Instance updated successfully in database
+11/15/2024 09:54:07 AM - INFO: 6e699f85-7cd5-4ee8-8b8b-154cabdd6bee - User successfully logged in: maria22
+11/15/2024 09:54:39 AM - ERROR: 90af3336-290a-4cd5-9a30-9904770ec2a5 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 09:54:41 AM - ERROR: 0b259b35-e3de-4f63-9fd6-f0be19287218 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 09:54:55 AM - INFO: ab17ddac-92f3-4971-a308-0484e83debaa - Received data to get user
+11/15/2024 09:54:55 AM - INFO: ab17ddac-92f3-4971-a308-0484e83debaa - Verify authenticated user
+11/15/2024 09:54:55 AM - ERROR: ab17ddac-92f3-4971-a308-0484e83debaa - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 09:56:18 AM - INFO: fa327b90-d5d2-49af-9f47-93b44f535bf3 - Received data to get user
+11/15/2024 09:56:18 AM - INFO: fa327b90-d5d2-49af-9f47-93b44f535bf3 - Verify authenticated user
+11/15/2024 09:56:18 AM - ERROR: fa327b90-d5d2-49af-9f47-93b44f535bf3 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 09:56:20 AM - INFO: d2a0f9f7-1eb3-4cea-b34e-627d1e149730 - Received data to get user
+11/15/2024 09:56:20 AM - INFO: d2a0f9f7-1eb3-4cea-b34e-627d1e149730 - Verify authenticated user
+11/15/2024 09:56:20 AM - ERROR: d2a0f9f7-1eb3-4cea-b34e-627d1e149730 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 09:57:07 AM - INFO: 048678cc-9625-4b63-b0be-ff7bb63fb41f - Received data to get user
+11/15/2024 09:57:07 AM - INFO: 048678cc-9625-4b63-b0be-ff7bb63fb41f - Verify authenticated user
+11/15/2024 09:57:07 AM - ERROR: 048678cc-9625-4b63-b0be-ff7bb63fb41f - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 10:04:51 AM - ERROR: 28d759ad-8df1-4d4d-8790-5ed19c39a048 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 10:08:03 AM - ERROR: 15159fd0-2034-48cb-8489-d92fba281a21 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 10:35:59 AM - INFO: 2c4d4561-c7b9-495f-bee0-149ed80b8d64 - Received data to authenticate
+11/15/2024 10:35:59 AM - INFO: 2c4d4561-c7b9-495f-bee0-149ed80b8d64 - User successfully authenticated: maria22
+11/15/2024 10:36:19 AM - INFO: eb173f06-add2-4984-a5b3-4761d8f21a0e - Received data to authenticate
+11/15/2024 10:36:19 AM - INFO: eb173f06-add2-4984-a5b3-4761d8f21a0e - User successfully authenticated: maria22
+11/15/2024 10:40:40 AM - INFO: d5120d47-f681-482a-8716-958fe76645e9 - Received data to authenticate
+11/15/2024 10:40:40 AM - INFO: d5120d47-f681-482a-8716-958fe76645e9 - Get user
+11/15/2024 10:40:41 AM - INFO: d5120d47-f681-482a-8716-958fe76645e9 - Compare passwords and user confirmation
+11/15/2024 10:40:42 AM - INFO: d5120d47-f681-482a-8716-958fe76645e9 - Create tokens
+11/15/2024 10:40:42 AM - INFO: d5120d47-f681-482a-8716-958fe76645e9 - User successfully authenticated: maria22
+11/15/2024 10:41:16 AM - ERROR: b1fa6e07-a299-4737-b1f6-72f2347c3bf4 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 10:41:24 AM - ERROR: 180a5311-7ab8-4f2c-b291-2742ef81a015 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 10:42:06 AM - INFO: 209e993e-07d6-4f5b-8b0a-97186f405bc4 - Received data to authenticate
+11/15/2024 10:42:06 AM - INFO: 209e993e-07d6-4f5b-8b0a-97186f405bc4 - Get user
+11/15/2024 10:42:06 AM - INFO: 209e993e-07d6-4f5b-8b0a-97186f405bc4 - Compare passwords and user confirmation
+11/15/2024 10:42:06 AM - INFO: 209e993e-07d6-4f5b-8b0a-97186f405bc4 - Create tokens
+11/15/2024 10:42:06 AM - INFO: 209e993e-07d6-4f5b-8b0a-97186f405bc4 - User successfully authenticated: maria22
+11/15/2024 10:42:12 AM - INFO: 6dab7e45-d333-41a6-9364-1d469271e922 - Received data to authenticate
+11/15/2024 10:42:12 AM - INFO: 6dab7e45-d333-41a6-9364-1d469271e922 - Get user
+11/15/2024 10:42:12 AM - INFO: 6dab7e45-d333-41a6-9364-1d469271e922 - Compare passwords and user confirmation
+11/15/2024 10:42:13 AM - INFO: 6dab7e45-d333-41a6-9364-1d469271e922 - Create tokens
+11/15/2024 10:42:13 AM - INFO: 6dab7e45-d333-41a6-9364-1d469271e922 - User successfully authenticated: maria22
+11/15/2024 10:42:16 AM - ERROR: 00cdaefc-900e-4781-a75b-af724396e1ab - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 10:45:36 AM - ERROR: 8a0b1476-f7ae-478c-b7b1-0e66cc7dd933 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 10:48:32 AM - INFO: 62f06fb2-37f8-44f0-8875-c3c40c04f528 - Received data to authenticate
+11/15/2024 10:48:32 AM - INFO: 62f06fb2-37f8-44f0-8875-c3c40c04f528 - Get user
+11/15/2024 10:48:33 AM - INFO: 62f06fb2-37f8-44f0-8875-c3c40c04f528 - Compare passwords and user confirmation
+11/15/2024 10:48:34 AM - INFO: 62f06fb2-37f8-44f0-8875-c3c40c04f528 - Create tokens
+11/15/2024 10:48:34 AM - INFO: 62f06fb2-37f8-44f0-8875-c3c40c04f528 - User successfully authenticated: maria22
+11/15/2024 10:48:50 AM - INFO: c7ccb343-78d8-432c-a160-ecb1405e0438 - Received data to authenticate
+11/15/2024 10:48:50 AM - INFO: c7ccb343-78d8-432c-a160-ecb1405e0438 - Get user
+11/15/2024 10:48:50 AM - INFO: c7ccb343-78d8-432c-a160-ecb1405e0438 - Compare passwords and user confirmation
+11/15/2024 10:48:50 AM - INFO: c7ccb343-78d8-432c-a160-ecb1405e0438 - Create tokens
+11/15/2024 10:48:50 AM - INFO: c7ccb343-78d8-432c-a160-ecb1405e0438 - User successfully authenticated: maria22
+11/15/2024 10:50:07 AM - INFO: b47c0b3c-c33b-4d91-b247-b862a75a762b - Received data to authenticate
+11/15/2024 10:50:07 AM - INFO: b47c0b3c-c33b-4d91-b247-b862a75a762b - Get user
+11/15/2024 10:50:08 AM - INFO: b47c0b3c-c33b-4d91-b247-b862a75a762b - Compare passwords and user confirmation
+11/15/2024 10:50:08 AM - INFO: b47c0b3c-c33b-4d91-b247-b862a75a762b - Create tokens
+11/15/2024 10:50:08 AM - INFO: b47c0b3c-c33b-4d91-b247-b862a75a762b - User successfully authenticated: maria22
+11/15/2024 10:50:14 AM - INFO: a397d24d-cdca-4e7c-b6c9-fcf14f0612a0 - Received data to get all users
+11/15/2024 10:50:14 AM - INFO: a397d24d-cdca-4e7c-b6c9-fcf14f0612a0 - Get all users
+11/15/2024 10:50:14 AM - INFO: a397d24d-cdca-4e7c-b6c9-fcf14f0612a0 - Getting all instances from database
+11/15/2024 10:50:14 AM - INFO: a397d24d-cdca-4e7c-b6c9-fcf14f0612a0 - Instances found successfully in database
+11/15/2024 10:50:14 AM - INFO: a397d24d-cdca-4e7c-b6c9-fcf14f0612a0 - All users found successfully: [UserResponse(username='maria2222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria22222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria22', full_name='maria perez', email='websolutionsprojects@gmail.com', profile_picture='/static/profile_pictures/profile_picture.png'), UserResponse(username='maria212', full_name='maria perez', email='websolutionsprojects@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria2112', full_name='maria perez', email='websolutionsprojects@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png')]
+11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Received data to get user
+11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Verify authenticated user
+11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Get user
+11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Getting instance from database
+11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Instance found successfully in database
+11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - User found successfully: username='maria22' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'

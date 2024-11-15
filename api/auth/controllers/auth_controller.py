@@ -1,6 +1,8 @@
 from typing import Annotated
 
 from fastapi import APIRouter, Request, Response, Depends
+from fastapi.security import OAuth2PasswordRequestForm
+from starlette.datastructures import FormData
 
 from api.auth.schemas.inputs import UserLogin, Token, UserEmail, UserResetPassword
 from api.auth.schemas.outputs import TokensResponse
@@ -108,3 +110,23 @@ async def reset_password(
     updated_password = await auth_service.reset_password(user_password)
     api_response.logger.info(f"Password updated successfully")
     return updated_password
+
+
+@auth_router.post(
+    path="/token",
+    tags=["auth"],
+    description="User token",
+    include_in_schema=False
+)
+@response_handler(raw_response=True)
+async def authenticate_user_token(
+        request: Request,
+        response: Response,
+        form_data: Annotated[OAuth2PasswordRequestForm, Depends()],
+        api_response: Annotated[ApiResponse, Depends(ApiResponse)]
+) -> dict:
+    api_response.logger.info("Received data to authenticate")
+    auth_service = AuthService(request.app.database, api_response)
+    user_tokens = await auth_service.authenticate_user_token(form_data)
+    api_response.logger.info(f"User successfully authenticated: {form_data.username}")
+    return user_tokens.model_dump()
