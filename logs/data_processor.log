@@ -200,3 +200,337 @@
 11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Getting instance from database
 11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - Instance found successfully in database
 11/15/2024 10:50:33 AM - INFO: a7140a88-591a-49a8-a73f-0a77eadf8aa4 - User found successfully: username='maria22' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'
+11/15/2024 02:31:26 PM - INFO: e8382d81-b690-45b0-ba6b-407f1326c8f1 - Received data to create user
+11/15/2024 02:31:26 PM - INFO: e8382d81-b690-45b0-ba6b-407f1326c8f1 - Check if the user already exists
+11/15/2024 02:31:26 PM - INFO: e8382d81-b690-45b0-ba6b-407f1326c8f1 - Checking availability
+11/15/2024 02:31:26 PM - INFO: e8382d81-b690-45b0-ba6b-407f1326c8f1 - Checking availability
+11/15/2024 02:31:27 PM - ERROR: e8382d81-b690-45b0-ba6b-407f1326c8f1 - Error: NotAvailableError : Not available - The email websolutionsprojects@gmail.com is not available, it already exists, request.body
+11/15/2024 02:32:19 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Received data to create user
+11/15/2024 02:32:19 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Check if the user already exists
+11/15/2024 02:32:19 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Checking availability
+11/15/2024 02:32:20 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Checking availability
+11/15/2024 02:32:20 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Received data to create user
+11/15/2024 02:32:20 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Creating instance in database
+11/15/2024 02:32:20 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Instance created successfully in database
+11/15/2024 02:32:20 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - Sending email to user
+11/15/2024 02:32:23 PM - INFO: dfdb1141-102d-4495-84ab-7e732ad92a3c - User created successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/default_profile_picture.png'
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Received data to verify user
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Get user
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Getting instance from database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Instance found successfully in database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Compare tokens
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Confirm verification and delete token
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Patching instance in database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Getting instance from database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Instance found successfully in database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Updating instance in database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - Instance updated successfully in database
+11/15/2024 02:32:51 PM - INFO: 0423132a-11d0-4896-9904-18e9f2b993e3 - User verified successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/default_profile_picture.png'
+11/15/2024 02:33:10 PM - ERROR: db79cb28-333e-4c2b-9c99-1d9aa88ed704 - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 02:48:23 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Received data to log
+11/15/2024 02:48:23 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Check if user or email exists
+11/15/2024 02:48:24 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Get user
+11/15/2024 02:48:24 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Compare passwords and user confirmation
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Create tokens
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Save refresh token
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Patching instance in database
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Getting instance from database
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Instance found successfully in database
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Updating instance in database
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - Instance updated successfully in database
+11/15/2024 02:48:25 PM - INFO: 89ec7b35-d330-4ba1-a18d-82fbd268c195 - User successfully logged in: maria21112
+11/15/2024 02:50:02 PM - INFO: 8ce7641d-6f1d-464f-ad34-5e27c66c3c5a - Received data to log
+11/15/2024 02:50:02 PM - INFO: 8ce7641d-6f1d-464f-ad34-5e27c66c3c5a - Check if user or email exists
+11/15/2024 02:50:02 PM - INFO: 8ce7641d-6f1d-464f-ad34-5e27c66c3c5a - Get user
+11/15/2024 02:50:02 PM - INFO: 8ce7641d-6f1d-464f-ad34-5e27c66c3c5a - Compare passwords and user confirmation
+11/15/2024 02:50:03 PM - ERROR: 8ce7641d-6f1d-464f-ad34-5e27c66c3c5a - Error: UnauthorizedError : Unauthorized error - User not verified, request.path_params
+11/15/2024 02:50:09 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Received data to log
+11/15/2024 02:50:09 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Check if user or email exists
+11/15/2024 02:50:09 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Get user
+11/15/2024 02:50:09 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Compare passwords and user confirmation
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Create tokens
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Save refresh token
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Patching instance in database
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Getting instance from database
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Instance found successfully in database
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Updating instance in database
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - Instance updated successfully in database
+11/15/2024 02:50:10 PM - INFO: eb5ec307-6ff7-48c9-adea-ccf33670e2c0 - User successfully logged in: maria21112
+11/15/2024 02:50:25 PM - INFO: 48226084-68b2-46df-8d4e-f5243521134d - Received data to refresh token
+11/15/2024 02:50:25 PM - INFO: 48226084-68b2-46df-8d4e-f5243521134d - Verify token
+11/15/2024 02:50:25 PM - ERROR: 48226084-68b2-46df-8d4e-f5243521134d - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Received data to refresh token
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Verify token
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Get user with token information
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Getting instance from database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Instance found successfully in database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Compare tokens
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Create tokens
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Save refresh token
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Patching instance in database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Getting instance from database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Instance found successfully in database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Updating instance in database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Instance updated successfully in database
+11/15/2024 02:50:36 PM - INFO: 7ed6b2b6-0b06-4e83-a10c-b2343ed667bd - Refresh token successfully refreshed: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkZmFjZTExLWZhOWMtNGM0Yy1hM2QzLTU4MGQxODE3YzM0MyIsInVzZXJuYW1lIjoibWFyaWEyMTExMiIsImZ1bGxfbmFtZSI6Im1hcmlhIHBlcmV6IiwiZW1haWwiOiJ3ZWJzb2x1dGlvbnNwcm9qZWN0c0BnbWFpbC5jb20iLCJleHAiOjE3MzIzMDUwMzZ9.53zSNyyg7aQfxfz198dA8Hkf5GXaQ9Ip9X9bz6Ag61o
+11/15/2024 02:50:50 PM - INFO: d5890825-ec21-4580-a952-3d2833b0032a - Received data to get user
+11/15/2024 02:50:50 PM - INFO: d5890825-ec21-4580-a952-3d2833b0032a - Verify authenticated user
+11/15/2024 02:50:50 PM - INFO: d5890825-ec21-4580-a952-3d2833b0032a - Get user
+11/15/2024 02:50:50 PM - INFO: d5890825-ec21-4580-a952-3d2833b0032a - Getting instance from database
+11/15/2024 02:50:50 PM - INFO: d5890825-ec21-4580-a952-3d2833b0032a - Instance found successfully in database
+11/15/2024 02:50:50 PM - INFO: d5890825-ec21-4580-a952-3d2833b0032a - User found successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/default_profile_picture.png'
+11/15/2024 02:50:57 PM - INFO: 8d63a232-dfb3-409a-a6ed-839e09d3b308 - Received data to get all users
+11/15/2024 02:50:57 PM - INFO: 8d63a232-dfb3-409a-a6ed-839e09d3b308 - Get all users
+11/15/2024 02:50:57 PM - INFO: 8d63a232-dfb3-409a-a6ed-839e09d3b308 - Getting all instances from database
+11/15/2024 02:50:57 PM - INFO: 8d63a232-dfb3-409a-a6ed-839e09d3b308 - Instances found successfully in database
+11/15/2024 02:50:57 PM - INFO: 8d63a232-dfb3-409a-a6ed-839e09d3b308 - All users found successfully: [UserResponse(username='maria2222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria22222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria22', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/profile_picture.png'), UserResponse(username='maria212', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria2112', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria21112', full_name='maria perez', email='websolutionsprojects@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png')]
+11/15/2024 02:51:21 PM - INFO: 74a7d2b9-a2e3-4dfb-a479-8a2458fea1e4 - Received data to update user
+11/15/2024 02:51:21 PM - INFO: 74a7d2b9-a2e3-4dfb-a479-8a2458fea1e4 - Verify authenticated user
+11/15/2024 02:51:21 PM - ERROR: 74a7d2b9-a2e3-4dfb-a479-8a2458fea1e4 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Received data to update user
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Verify authenticated user
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Check if data is available
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Checking availability
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Checking availability
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Received data to update user
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Patching instance in database
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Getting instance from database
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Instance found successfully in database
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Updating instance in database
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - Instance updated successfully in database
+11/15/2024 02:51:28 PM - INFO: a9b8da3a-4da4-467e-ad05-a24c8b780ca3 - User updated successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Received data to update user
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Verify authenticated user
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Check if data is available
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Checking availability
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Checking availability
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Received data to update user
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Patching instance in database
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Getting instance from database
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Instance found successfully in database
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Updating instance in database
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - Instance updated successfully in database
+11/15/2024 02:51:38 PM - INFO: 60140258-eb62-4ef8-ae36-a1f9be86cecf - User updated successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'
+11/15/2024 02:52:36 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Received data to change the user password
+11/15/2024 02:52:36 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Verify authenticated user
+11/15/2024 02:52:36 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Get user
+11/15/2024 02:52:36 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Getting instance from database
+11/15/2024 02:52:36 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Instance found successfully in database
+11/15/2024 02:52:36 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Received data to update user
+11/15/2024 02:52:37 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Patching instance in database
+11/15/2024 02:52:37 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Getting instance from database
+11/15/2024 02:52:37 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Instance found successfully in database
+11/15/2024 02:52:37 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Updating instance in database
+11/15/2024 02:52:37 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Instance updated successfully in database
+11/15/2024 02:52:37 PM - INFO: b06a1521-49e8-4138-98a1-801eb2f6089e - Password updated successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Received data to logout
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Get user
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Getting instance from database
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Instance found successfully in database
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Delete or disable tokens
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Patching instance in database
+11/15/2024 02:53:16 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Getting instance from database
+11/15/2024 02:53:17 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Instance found successfully in database
+11/15/2024 02:53:17 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Updating instance in database
+11/15/2024 02:53:17 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - Instance updated successfully in database
+11/15/2024 02:53:17 PM - INFO: 1adf8ffd-fc16-44a3-b87d-d0c3271d5afd - User successfully logged out: adface11-fa9c-4c4c-a3d3-580d1817c343
+11/15/2024 02:53:36 PM - INFO: 84d2361a-b59f-4e7b-b777-bf491ba9ef29 - Received data to get user
+11/15/2024 02:53:36 PM - INFO: 84d2361a-b59f-4e7b-b777-bf491ba9ef29 - Verify authenticated user
+11/15/2024 02:53:36 PM - INFO: 84d2361a-b59f-4e7b-b777-bf491ba9ef29 - Get user
+11/15/2024 02:53:36 PM - INFO: 84d2361a-b59f-4e7b-b777-bf491ba9ef29 - Getting instance from database
+11/15/2024 02:53:36 PM - INFO: 84d2361a-b59f-4e7b-b777-bf491ba9ef29 - Instance found successfully in database
+11/15/2024 02:53:36 PM - INFO: 84d2361a-b59f-4e7b-b777-bf491ba9ef29 - User found successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/profile_picture.png'
+11/15/2024 02:54:21 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Received data to forgot password
+11/15/2024 02:54:21 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Check if email exists
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Get user
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Save email token
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Patching instance in database
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Getting instance from database
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Instance found successfully in database
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Updating instance in database
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Instance updated successfully in database
+11/15/2024 02:54:22 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Sending email to user
+11/15/2024 02:54:24 PM - INFO: 3689393d-c6d8-4de1-b896-b40b11a39181 - Message successfully sent to: websolutionsprojects@gmail.com
+11/15/2024 02:55:22 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Received data to reset password
+11/15/2024 02:55:22 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Get user
+11/15/2024 02:55:22 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Getting instance from database
+11/15/2024 02:55:22 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Instance found successfully in database
+11/15/2024 02:55:22 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Compare tokens
+11/15/2024 02:55:22 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Save new password and delete token
+11/15/2024 02:55:23 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Patching instance in database
+11/15/2024 02:55:23 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Getting instance from database
+11/15/2024 02:55:23 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Instance found successfully in database
+11/15/2024 02:55:23 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Updating instance in database
+11/15/2024 02:55:23 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Instance updated successfully in database
+11/15/2024 02:55:23 PM - INFO: 44ee22eb-21b7-40e6-a0b2-fd09e7eb8c0b - Password updated successfully
+11/15/2024 02:56:02 PM - INFO: 375c8126-b389-491f-bff8-55e5f05339fa - Received data to delete user
+11/15/2024 02:56:02 PM - INFO: 375c8126-b389-491f-bff8-55e5f05339fa - Verify authenticated user
+11/15/2024 02:56:02 PM - ERROR: 375c8126-b389-491f-bff8-55e5f05339fa - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/15/2024 02:56:07 PM - INFO: 88c70c4e-30a3-404d-8330-04acc6dcd2c6 - Received data to delete user
+11/15/2024 02:56:07 PM - INFO: 88c70c4e-30a3-404d-8330-04acc6dcd2c6 - Verify authenticated user
+11/15/2024 02:56:07 PM - INFO: 88c70c4e-30a3-404d-8330-04acc6dcd2c6 - Delete user
+11/15/2024 02:56:07 PM - INFO: 88c70c4e-30a3-404d-8330-04acc6dcd2c6 - Deleting instance from database
+11/15/2024 02:56:07 PM - INFO: 88c70c4e-30a3-404d-8330-04acc6dcd2c6 - Instance deleted successfully in database
+11/15/2024 02:56:07 PM - INFO: 88c70c4e-30a3-404d-8330-04acc6dcd2c6 - User deleted successfully: adface11-fa9c-4c4c-a3d3-580d1817c343
+11/15/2024 02:57:42 PM - INFO: 52053099-aa73-4654-b0f8-d39a0a630457 - Received data to forgot password
+11/15/2024 02:57:42 PM - INFO: 52053099-aa73-4654-b0f8-d39a0a630457 - Check if email exists
+11/15/2024 02:57:43 PM - ERROR: 52053099-aa73-4654-b0f8-d39a0a630457 - Error: InvalidCredentialsError : Invalid credentials - Invalid credentials, request.body
+11/15/2024 02:57:45 PM - INFO: d55e7d5f-8cdc-4906-9b31-8e1e9016ec3b - Received data to forgot password
+11/15/2024 02:57:45 PM - INFO: d55e7d5f-8cdc-4906-9b31-8e1e9016ec3b - Check if email exists
+11/15/2024 02:57:45 PM - ERROR: d55e7d5f-8cdc-4906-9b31-8e1e9016ec3b - Error: InvalidCredentialsError : Invalid credentials - Invalid credentials, request.body
+11/15/2024 02:58:00 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Received data to forgot password
+11/15/2024 02:58:00 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Check if email exists
+11/15/2024 02:58:00 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Get user
+11/15/2024 02:58:00 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Save email token
+11/15/2024 02:58:00 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Patching instance in database
+11/15/2024 02:58:00 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Getting instance from database
+11/15/2024 02:58:01 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Instance found successfully in database
+11/15/2024 02:58:01 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Updating instance in database
+11/15/2024 02:58:01 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Instance updated successfully in database
+11/15/2024 02:58:01 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Sending email to user
+11/15/2024 02:58:03 PM - INFO: 2b9bbcd5-c3c9-4d7f-9ac0-6afadcdaa35d - Message successfully sent to: websolutionsprojects@gmail.com
+11/15/2024 02:58:46 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Received data to forgot password
+11/15/2024 02:58:46 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Check if email exists
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Get user
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Save email token
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Patching instance in database
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Getting instance from database
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Instance found successfully in database
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Updating instance in database
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Instance updated successfully in database
+11/15/2024 02:58:47 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Sending email to user
+11/15/2024 02:58:49 PM - INFO: f75fa608-8f5b-4896-9579-7b83aa704c2c - Message successfully sent to: websolutionsprojects@gmail.com
+11/16/2024 04:21:58 PM - INFO: df7af913-83fb-47d4-900f-772c21830715 - Received data to create workspace
+11/16/2024 04:21:58 PM - ERROR: df7af913-83fb-47d4-900f-772c21830715 - _collection_name
+11/16/2024 04:22:23 PM - INFO: bf550be5-1821-47bc-9101-d8267106940f - Received data to create workspace
+11/16/2024 04:22:23 PM - ERROR: bf550be5-1821-47bc-9101-d8267106940f - _collection_name
+11/16/2024 04:25:46 PM - INFO: cda3ac46-35e2-4287-810f-fcf5ede38778 - Received data to create workspace
+11/16/2024 04:25:46 PM - INFO: cda3ac46-35e2-4287-810f-fcf5ede38778 - Check if the workspace already exists
+11/16/2024 04:25:46 PM - INFO: cda3ac46-35e2-4287-810f-fcf5ede38778 - Checking availability
+11/16/2024 04:25:46 PM - ERROR: cda3ac46-35e2-4287-810f-fcf5ede38778 - Error: NotAvailableError : Not available - The workspace <Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\Python\Python311\Lib\asyncio\futures.py:387]> is not available, it already exists, request.body
+11/16/2024 04:27:21 PM - INFO: adb67db9-9a64-490c-adb3-ad98a95a7e99 - Received data to create workspace
+11/16/2024 04:27:21 PM - INFO: adb67db9-9a64-490c-adb3-ad98a95a7e99 - Check if the workspace already exists
+11/16/2024 04:27:21 PM - INFO: adb67db9-9a64-490c-adb3-ad98a95a7e99 - Checking availability
+11/16/2024 04:27:21 PM - ERROR: adb67db9-9a64-490c-adb3-ad98a95a7e99 - Error: NotAvailableError : Not available - The workspace <Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\Python\Python311\Lib\asyncio\futures.py:387]> is not available, it already exists, request.body
+11/16/2024 04:31:25 PM - INFO: 912d1f36-b52a-4fd4-9b8e-16881fb60e87 - Received data to create workspace
+11/16/2024 04:31:25 PM - INFO: 912d1f36-b52a-4fd4-9b8e-16881fb60e87 - Check if the workspace already exists
+11/16/2024 04:31:25 PM - INFO: 912d1f36-b52a-4fd4-9b8e-16881fb60e87 - Checking availability
+11/16/2024 04:31:25 PM - ERROR: 912d1f36-b52a-4fd4-9b8e-16881fb60e87 - Error: NotAvailableError : Not available - The workspace <Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\Python\Python311\Lib\asyncio\futures.py:387]> is not available, it already exists, request.body
+11/16/2024 04:31:37 PM - INFO: 2f4f3d4a-c85d-42ff-8c51-96a45aa6e24c - Received data to create workspace
+11/16/2024 04:31:37 PM - INFO: 2f4f3d4a-c85d-42ff-8c51-96a45aa6e24c - Check if the workspace already exists
+11/16/2024 04:31:37 PM - INFO: 2f4f3d4a-c85d-42ff-8c51-96a45aa6e24c - Checking availability
+11/16/2024 04:31:37 PM - ERROR: 2f4f3d4a-c85d-42ff-8c51-96a45aa6e24c - Error: NotAvailableError : Not available - The workspace <Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\Python\Python311\Lib\asyncio\futures.py:387]> is not available, it already exists, request.body
+11/16/2024 04:36:15 PM - INFO: 2b2d1006-c551-4546-95f9-463a7a0658fc - Received data to create workspace
+11/16/2024 04:36:15 PM - INFO: 2b2d1006-c551-4546-95f9-463a7a0658fc - Check if the workspace already exists
+11/16/2024 04:36:15 PM - INFO: 2b2d1006-c551-4546-95f9-463a7a0658fc - Creating workspace
+11/16/2024 04:36:15 PM - INFO: 2b2d1006-c551-4546-95f9-463a7a0658fc - Creating instance in database
+11/16/2024 04:36:17 PM - INFO: 2b2d1006-c551-4546-95f9-463a7a0658fc - Instance created successfully in database
+11/16/2024 04:50:57 PM - INFO: 135bbb5f-4a6a-467e-b600-1da96aae0792 - Received data to get workspace
+11/16/2024 04:50:57 PM - INFO: 135bbb5f-4a6a-467e-b600-1da96aae0792 - Get workspace
+11/16/2024 04:50:57 PM - INFO: 135bbb5f-4a6a-467e-b600-1da96aae0792 - Getting instance from database
+11/16/2024 04:50:58 PM - INFO: 135bbb5f-4a6a-467e-b600-1da96aae0792 - Instance found successfully in database
+11/16/2024 05:14:02 PM - INFO: e2bbaa94-71e7-4e12-9cbf-10d264654538 - Received data to get all workspaces
+11/16/2024 05:14:02 PM - INFO: e2bbaa94-71e7-4e12-9cbf-10d264654538 - Get all workspaces
+11/16/2024 05:14:02 PM - INFO: e2bbaa94-71e7-4e12-9cbf-10d264654538 - Getting all instances from database
+11/16/2024 05:14:03 PM - INFO: e2bbaa94-71e7-4e12-9cbf-10d264654538 - Instances found successfully in database
+11/16/2024 05:14:16 PM - INFO: 352be6b8-1e71-4382-b0a9-75bfb96bd9d6 - Received data to create workspace
+11/16/2024 05:14:16 PM - INFO: 352be6b8-1e71-4382-b0a9-75bfb96bd9d6 - Check if the workspace already exists
+11/16/2024 05:14:16 PM - INFO: 352be6b8-1e71-4382-b0a9-75bfb96bd9d6 - Checking availability
+11/16/2024 05:14:16 PM - ERROR: 352be6b8-1e71-4382-b0a9-75bfb96bd9d6 - Error: NotAvailableError : Not available - The workspace <Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\Python\Python311\Lib\asyncio\futures.py:387]> is not available, it already exists, request.body
+11/16/2024 05:14:38 PM - INFO: 31da2a01-9282-4b38-8f81-3e638ff657d2 - Received data to create workspace
+11/16/2024 05:14:38 PM - INFO: 31da2a01-9282-4b38-8f81-3e638ff657d2 - Check if the workspace already exists
+11/16/2024 05:14:38 PM - INFO: 31da2a01-9282-4b38-8f81-3e638ff657d2 - Checking availability
+11/16/2024 05:14:38 PM - ERROR: 31da2a01-9282-4b38-8f81-3e638ff657d2 - Error: NotAvailableError : Not available - The workspace <Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Program Files\Python\Python311\Lib\asyncio\futures.py:387]> is not available, it already exists, request.body
+11/16/2024 05:17:19 PM - INFO: ef694c04-f68d-4b4a-94af-de196640868b - Received data to create workspace
+11/16/2024 05:17:19 PM - INFO: ef694c04-f68d-4b4a-94af-de196640868b - Check if the workspace already exists
+11/16/2024 05:17:19 PM - INFO: ef694c04-f68d-4b4a-94af-de196640868b - Checking availability
+11/16/2024 05:17:21 PM - INFO: ef694c04-f68d-4b4a-94af-de196640868b - Creating workspace
+11/16/2024 05:17:21 PM - INFO: ef694c04-f68d-4b4a-94af-de196640868b - Creating instance in database
+11/16/2024 05:17:21 PM - INFO: ef694c04-f68d-4b4a-94af-de196640868b - Instance created successfully in database
+11/16/2024 05:17:27 PM - INFO: 3bd6666d-cc34-4c76-ae48-592ef17e59a9 - Received data to create workspace
+11/16/2024 05:17:27 PM - INFO: 3bd6666d-cc34-4c76-ae48-592ef17e59a9 - Check if the workspace already exists
+11/16/2024 05:17:27 PM - INFO: 3bd6666d-cc34-4c76-ae48-592ef17e59a9 - Checking availability
+11/16/2024 05:17:27 PM - INFO: 3bd6666d-cc34-4c76-ae48-592ef17e59a9 - Creating workspace
+11/16/2024 05:17:27 PM - INFO: 3bd6666d-cc34-4c76-ae48-592ef17e59a9 - Creating instance in database
+11/16/2024 05:17:27 PM - INFO: 3bd6666d-cc34-4c76-ae48-592ef17e59a9 - Instance created successfully in database
+11/16/2024 05:17:40 PM - INFO: 84a2de87-e56a-4b49-b6c8-c2e3c6f02bc4 - Received data to get all workspaces
+11/16/2024 05:17:40 PM - INFO: 84a2de87-e56a-4b49-b6c8-c2e3c6f02bc4 - Get all workspaces
+11/16/2024 05:17:40 PM - INFO: 84a2de87-e56a-4b49-b6c8-c2e3c6f02bc4 - Getting all instances from database
+11/16/2024 05:17:40 PM - INFO: 84a2de87-e56a-4b49-b6c8-c2e3c6f02bc4 - Instances found successfully in database
+11/20/2024 10:34:50 AM - INFO: 45395e7e-0035-4ebf-af2c-23fb5a56cbd5 - Received data to create user
+11/20/2024 10:34:50 AM - INFO: 45395e7e-0035-4ebf-af2c-23fb5a56cbd5 - Check if the user already exists
+11/20/2024 10:34:50 AM - INFO: 45395e7e-0035-4ebf-af2c-23fb5a56cbd5 - Checking availability
+11/20/2024 10:34:51 AM - INFO: 45395e7e-0035-4ebf-af2c-23fb5a56cbd5 - Checking availability
+11/20/2024 10:34:51 AM - ERROR: 45395e7e-0035-4ebf-af2c-23fb5a56cbd5 - Error: NotAvailableError : Not available - The email websolutionsprojects@gmail.com is not available, it already exists, request.body
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Received data to create user
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Check if the user already exists
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Checking availability
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Checking availability
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Received data to create user
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Creating instance in database
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Instance created successfully in database
+11/20/2024 10:35:08 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - Sending email to user
+11/20/2024 10:35:10 AM - INFO: a0c4d914-4c26-4986-9828-7abf7a6ac4ed - User created successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/default_profile_picture.png'
+11/20/2024 10:36:27 AM - INFO: a017e281-512f-40e2-b87d-df0edd4b2d6c - Received data to log
+11/20/2024 10:36:27 AM - INFO: a017e281-512f-40e2-b87d-df0edd4b2d6c - Check if user or email exists
+11/20/2024 10:36:27 AM - INFO: a017e281-512f-40e2-b87d-df0edd4b2d6c - Get user
+11/20/2024 10:36:27 AM - INFO: a017e281-512f-40e2-b87d-df0edd4b2d6c - Compare passwords and user confirmation
+11/20/2024 10:36:27 AM - ERROR: a017e281-512f-40e2-b87d-df0edd4b2d6c - Error: UnauthorizedError : Unauthorized error - User not verified, request.path_params
+11/20/2024 10:36:37 AM - ERROR: 3fe42805-4487-4d55-a8e0-73207849cb21 - Error: InvalidTokenError : Invalid token - Token has expired, request.headers
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Received data to verify user
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Get user
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Getting instance from database
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Instance found successfully in database
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Compare tokens
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Confirm verification and delete token
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Patching instance in database
+11/20/2024 10:36:52 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Getting instance from database
+11/20/2024 10:36:53 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Instance found successfully in database
+11/20/2024 10:36:53 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Updating instance in database
+11/20/2024 10:36:53 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - Instance updated successfully in database
+11/20/2024 10:36:53 AM - INFO: 4ca25a48-3dee-4795-8a5d-679c175423ef - User verified successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/default_profile_picture.png'
+11/20/2024 10:37:09 AM - ERROR: 6d3fc42a-cb9c-43ac-b0c3-b16b308f547b - Error: InvalidTokenError : Invalid token - Token has expired, request.headers
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Received data to log
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Check if user or email exists
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Get user
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Compare passwords and user confirmation
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Create tokens
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Save refresh token
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Patching instance in database
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Getting instance from database
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Instance found successfully in database
+11/20/2024 10:37:14 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Updating instance in database
+11/20/2024 10:37:15 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - Instance updated successfully in database
+11/20/2024 10:37:15 AM - INFO: 560e75ae-532c-493b-a579-ebf73e475797 - User successfully logged in: maria21112
+11/20/2024 10:37:41 AM - ERROR: 341c31a2-0546-41e5-8406-781121d2153a - Error: InvalidTokenError : Invalid token - Invalid token or signature verification failed, request.headers
+11/20/2024 10:37:54 AM - INFO: bc1c054b-a35b-4fb5-8c55-123dc037f8af - Received data to get user
+11/20/2024 10:37:54 AM - INFO: bc1c054b-a35b-4fb5-8c55-123dc037f8af - Verify authenticated user
+11/20/2024 10:37:54 AM - INFO: bc1c054b-a35b-4fb5-8c55-123dc037f8af - Get user
+11/20/2024 10:37:54 AM - INFO: bc1c054b-a35b-4fb5-8c55-123dc037f8af - Getting instance from database
+11/20/2024 10:37:54 AM - INFO: bc1c054b-a35b-4fb5-8c55-123dc037f8af - Instance found successfully in database
+11/20/2024 10:37:54 AM - INFO: bc1c054b-a35b-4fb5-8c55-123dc037f8af - User found successfully: username='maria21112' full_name='maria perez' email='websolutionsprojects@gmail.com' profile_picture='/static/profile_pictures/default_profile_picture.png'
+11/20/2024 10:38:01 AM - INFO: e200cb89-eb6f-4fb8-868b-05fcb94bcc89 - Received data to get all users
+11/20/2024 10:38:01 AM - INFO: e200cb89-eb6f-4fb8-868b-05fcb94bcc89 - Get all users
+11/20/2024 10:38:01 AM - INFO: e200cb89-eb6f-4fb8-868b-05fcb94bcc89 - Getting all instances from database
+11/20/2024 10:38:01 AM - INFO: e200cb89-eb6f-4fb8-868b-05fcb94bcc89 - Instances found successfully in database
+11/20/2024 10:38:01 AM - INFO: e200cb89-eb6f-4fb8-868b-05fcb94bcc89 - All users found successfully: [UserResponse(username='maria2222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria22222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria222', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria22', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/profile_picture.png'), UserResponse(username='maria212', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria2112', full_name='maria perez', email='websolutionsprojectss@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png'), UserResponse(username='maria21112', full_name='maria perez', email='websolutionsprojects@gmail.com', profile_picture='/static/profile_pictures/default_profile_picture.png')]
+11/20/2024 10:38:42 AM - INFO: 06c559ba-9663-4788-a560-f3fc8c5557c7 - Received data to delete user
+11/20/2024 10:38:42 AM - INFO: 06c559ba-9663-4788-a560-f3fc8c5557c7 - Verify authenticated user
+11/20/2024 10:38:42 AM - ERROR: 06c559ba-9663-4788-a560-f3fc8c5557c7 - Error: UnauthorizedError : Unauthorized error - Access denied: You are not allowed to access this resource, request.headers
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Received data to delete user
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Verify authenticated user
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Get user
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Getting instance from database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Instance found successfully in database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Delete user
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Patching instance in database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Getting instance from database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Instance found successfully in database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Updating instance in database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - Instance updated successfully in database
+11/20/2024 10:38:48 AM - INFO: 0f2d0bff-393d-4f8d-a83e-429a052e1386 - User deleted successfully: a21b9b73-2a24-4044-b3fb-4ba892df7b68
+11/20/2024 10:39:16 AM - INFO: 136002e0-6893-4857-819e-0fe47fe04fc4 - Received data to get user
+11/20/2024 10:39:16 AM - INFO: 136002e0-6893-4857-819e-0fe47fe04fc4 - Verify authenticated user
+11/20/2024 10:39:16 AM - INFO: 136002e0-6893-4857-819e-0fe47fe04fc4 - Get user
+11/20/2024 10:39:16 AM - INFO: 136002e0-6893-4857-819e-0fe47fe04fc4 - Getting instance from database
+11/20/2024 10:39:16 AM - ERROR: 136002e0-6893-4857-819e-0fe47fe04fc4 - Error: NotFoundError : Not Found - Instance not found, request.path_params

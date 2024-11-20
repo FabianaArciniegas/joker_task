@@ -82,8 +82,11 @@ class UsersService:
     async def delete_user(self, user_id: str) -> None:
         self.api_response.logger.info("Verify authenticated user")
         await verify_active_user(user_id, self.token_data)
+        self.api_response.logger.info("Get user")
+        user_found = await self.user_repository.get_by_id(user_id)
+        user_found.is_deleted = True
         self.api_response.logger.info("Delete user")
-        await self.user_repository.delete(user_id)
+        await self.user_repository.patch(user_id, user_found)
 
     async def change_password(self, user_id: str, user_password: UserChangePassword) -> UserResponse:
         self.api_response.logger.info("Verify authenticated user")
